@@ -2927,6 +2927,16 @@ struct U3COnFinishSubmitU3Ed__9_t55620C8613B09E9D27E197A064B9C249B6F13164  : pub
 	float ___U3CelapsedTimeU3E5__3_4;
 };
 
+struct U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state_0;
+	RuntimeObject* ___U3CU3E2__current_1;
+	CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9* ___U3CU3E4__this_2;
+	float ___U3CstartRotationYU3E5__2_3;
+	float ___U3CtargetRotationYU3E5__3_4;
+	float ___U3CtU3E5__4_5;
+};
+
 struct U3CU3Ec_t1A65C8A1102BB6667927AE45B494ECFC0C2EDDBC  : public RuntimeObject
 {
 };
@@ -12100,16 +12110,6 @@ struct NativePtr_tAFBCEE7D503D40125DA56C3BCBC0AC3B9AE70224
 	intptr_t ___sessionPtr_1;
 };
 
-struct U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4  : public RuntimeObject
-{
-	int32_t ___U3CU3E1__state_0;
-	RuntimeObject* ___U3CU3E2__current_1;
-	CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9* ___U3CU3E4__this_2;
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CstartRotationU3E5__2_3;
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CendRotationU3E5__3_4;
-	float ___U3CtU3E5__4_5;
-};
-
 struct JobScheduleParameters_tBA5415DA68E52ABC80373CD13D66C9AFAF8F542B 
 {
 	JobHandle_t5DF5F99902FED3C801A81C05205CEA6CE039EF08 ___Dependency_0;
@@ -15998,7 +15998,8 @@ struct CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9  : public MonoB
 	String_t* ___cardInfo_6;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___infoText_7;
 	float ___rotationAngle_8;
-	bool ___isRotating_9;
+	float ___rotationSpeed_9;
+	bool ___isRotating_10;
 };
 
 struct EventTrigger_tAEBFB7A16CA99343EA87722F78884BF8646BAE1B  : public MonoBehaviour_t532A11E69716D348D8AA7F854AFCBFCB8AD17F71
@@ -22155,10 +22156,10 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5199[9] =
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,0,0,0,0,0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5201[6] = 
 {
-	static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4, ___U3CstartRotationU3E5__2_3)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4, ___U3CendRotationU3E5__3_4)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4, ___U3CtU3E5__4_5)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5202[5] = 
+	static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829, ___U3CstartRotationYU3E5__2_3)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829, ___U3CtargetRotationYU3E5__3_4)),static_cast<int32_t>(offsetof(U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829, ___U3CtU3E5__4_5)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5202[6] = 
 {
-	static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___cardName_5)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___cardInfo_6)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___infoText_7)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___rotationAngle_8)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___isRotating_9)),};
+	static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___cardName_5)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___cardInfo_6)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___infoText_7)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___rotationAngle_8)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___rotationSpeed_9)),static_cast<int32_t>(offsetof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9, ___isRotating_10)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable5203[6] = 
 {
 	static_cast<int32_t>(offsetof(AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED, ___m_AnchorPrefab_5)),static_cast<int32_t>(offsetof(AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED_StaticFields, ___s_Hits_6)),static_cast<int32_t>(offsetof(AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED, ___m_AnchorPoints_7)),static_cast<int32_t>(offsetof(AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED, ___m_RaycastManager_8)),static_cast<int32_t>(offsetof(AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED, ___m_AnchorManager_9)),static_cast<int32_t>(offsetof(AnchorCreator_tBBEE94135B5183E0A8EE52FB00513F69C7C980ED, ___m_PlaneManager_10)),};

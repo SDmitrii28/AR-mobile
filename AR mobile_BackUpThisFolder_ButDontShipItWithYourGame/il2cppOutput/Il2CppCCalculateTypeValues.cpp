@@ -10688,6 +10688,16 @@ struct U3CU3Ec_tC91356F4CB32E0A0C2FFCB36B7E2C51A6CFAC05F_StaticFields
 	U3CU3Ec_tC91356F4CB32E0A0C2FFCB36B7E2C51A6CFAC05F* ___U3CU3E9_0;
 };
 
+struct U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829  : public RuntimeObject
+{
+	int32_t ___U3CU3E1__state_0;
+	RuntimeObject* ___U3CU3E2__current_1;
+	CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9* ___U3CU3E4__this_2;
+	float ___U3CstartRotationYU3E5__2_3;
+	float ___U3CtargetRotationYU3E5__3_4;
+	float ___U3CtU3E5__4_5;
+};
+
 struct U3CU3Ec_t1A65C8A1102BB6667927AE45B494ECFC0C2EDDBC  : public RuntimeObject
 {
 };
@@ -36887,16 +36897,6 @@ struct UxmlFactory_t1BC8F3254EBA5E85475338D3FF430F892CA21838  : public UxmlFacto
 {
 };
 
-struct U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4  : public RuntimeObject
-{
-	int32_t ___U3CU3E1__state_0;
-	RuntimeObject* ___U3CU3E2__current_1;
-	CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9* ___U3CU3E4__this_2;
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CstartRotationU3E5__2_3;
-	Quaternion_tDA59F214EF07D7700B26E40E562F267AF7306974 ___U3CendRotationU3E5__3_4;
-	float ___U3CtU3E5__4_5;
-};
-
 struct ButtonClickStatus_tD4248512DB59E16501C4DDB6EDC2C6DE04290470  : public RuntimeObject
 {
 	VisualElement_t2667F9D19E62C7A315927506C06F223AB9234115* ___m_Target_0;
@@ -52808,7 +52808,8 @@ struct CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9  : public MonoB
 	String_t* ___cardInfo_6;
 	TextMeshProUGUI_t101091AF4B578BB534C92E9D1EEAF0611636D957* ___infoText_7;
 	float ___rotationAngle_8;
-	bool ___isRotating_9;
+	float ___rotationSpeed_9;
+	bool ___isRotating_10;
 };
 
 struct DeltaControl_t63053AF5E0CD02B62F3CDE79821E4A12F72D573B  : public Vector2Control_t8D1B4021A1D82671AF916D3C0A476AA94E46A432
@@ -66473,7 +66474,7 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize5199 = { sizeof(int32_t)+ si
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5200;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5200 = { sizeof(U3CModuleU3E_tBB65183F1134474D09FF49B95625D25472B9BA8B), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5201;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize5201 = { sizeof(U3CRotateObjectU3Ed__6_tB296343C0B313F2981381CF825000CD6D63BCFB4), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize5201 = { sizeof(U3CRotateObjectU3Ed__7_t9B6ACB52FD1BB8D2595266EAAA07FE54618EF829), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5202;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize5202 = { sizeof(CardInformation_t078BDD06238C7FFA35A6B07F099148EFBBC415F9), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize5203;
